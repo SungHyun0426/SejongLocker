@@ -22,4 +22,4 @@ python manage.py loaddata locker\fixtures\defaultLockersE.json
 6. 인터넷 브라우저를 통해 '127.0.0.1:8000' 접근
 
 * manage.py 파일은 SejongLocker 파일 안에 있음
-** locker\fixitures 폴더 안에 있는 .json 파일들을 수정하여 초기 데이터배이스 정보들을 수정할 수 있음
+* locker\fixitures 폴더 안에 있는 .json 파일들을 수정하여 초기 데이터배이스 정보들을 수정할 수 있음
