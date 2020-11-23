@@ -1,0 +1,21 @@
+{% extends 'template.html' %}
+{% block content %}
+<table>
+  <tr>
+    <td style="background-color: #91cdaf; width: 5vw;">Available</td>
+    <td style="background-color: #f05555; width: 5vw;">Unavailable</td>
+    <td style="background-color: #f0cd3c; width: 5vw;">Broken</td>
+  </tr>
+</table>
+<table id="__lockers">
+  {% for row in lockers %}
+  <tr>
+    {% for col in row %}
+      <td id="{{col.availability}}">
+        <a href="{% url 'LOCKER:locker' col.lockerId %}">{{col.lockerId}}</a>
+      </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

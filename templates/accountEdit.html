@@ -1,0 +1,24 @@
+{% extends 'template.html' %}
+{% block javascript %}
+<script type="text/javascript">
+  function check()
+  {
+    if(document.formAccountEdit.newPassword.value == "")
+    {alert("\nEmpty password\nPlease input password");}
+    else if(document.formAccountEdit.newPassword.value != document.formAccountEdit.newPassword_re.value)
+    {alert("\nTwo passwords do not match\nPlease match passwords");}
+    else
+    {document.formAccountEdit.submit();}
+  }
+</script>
+{% endblock %}
+{% block content %}
+<form enctype="multipart/form-data" method="post" name="formAccountEdit" type="file">{% csrf_token %}
+  <table>
+    <tr><td>[<input type="password" name="newPassword" placeholder="Input new password">]</td></tr>
+    <tr><td>[<input type="password" name="newPassword_re" placeholder="Re-Input new password">]</td></tr>
+    <tr><td>{{ photoForm.as_p }}</td></tr>
+    <tr><td colspan="2"><a onclick="javascript:check()">[Save]</a></td></tr>
+  </table>
+</form>
+{% endblock %}

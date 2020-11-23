@@ -1,0 +1,43 @@
+[
+  {"model": "locker.locker", "fields": {"lockerId": "E00", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E01", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E02", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E03", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E04", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E05", "availability": "A"}},
+
+  {"model": "locker.locker", "fields": {"lockerId": "E10", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E11", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E12", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E13", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E14", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E15", "availability": "B"}},
+
+  {"model": "locker.locker", "fields": {"lockerId": "E20", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E21", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E22", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E23", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E24", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E25", "availability": "A"}},
+
+  {"model": "locker.locker", "fields": {"lockerId": "E30", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E31", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E32", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E33", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E34", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E35", "availability": "A"}},
+
+  {"model": "locker.locker", "fields": {"lockerId": "E40", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E41", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E42", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E43", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E44", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E45", "availability": "A"}},
+
+  {"model": "locker.locker", "fields": {"lockerId": "E50", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E51", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E52", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E53", "availability": "B"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E54", "availability": "A"}},
+  {"model": "locker.locker", "fields": {"lockerId": "E55", "availability": "A"}}
+]

@@ -1,0 +1,17 @@
+{% extends 'template.html' %}
+{% block content %}
+<table id="locker">
+  <tr>
+    <td>
+      Locker [{{locker.lockerId}}] is
+      {% if locker.availability == 'A' %}
+        [Available]
+      {% elif locker.availability == 'U' %}
+        [Unavailable]
+      {% else %}
+        [Broken]
+      {% endif %}
+    </td>
+  </tr>
+</table>
+{% endblock %}

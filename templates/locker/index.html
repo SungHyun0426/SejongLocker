@@ -1,0 +1,32 @@
+{% extends 'template.html' %}
+{% block content %}
+<table id="_lockers">
+  <tr>
+    <td style="border: 1px solid black;" id="hoverable">
+      <a href="{% url 'LOCKER:lockers' 'A' %}">A</a>
+    </td>
+    <td></td>
+    <td style="border: 1px solid black;" id="hoverable">
+      <a href="{% url 'LOCKER:lockers' 'B' %}">B</a>
+    </td>
+    <td></td>
+    <td style="border: 1px solid black;" id="hoverable">
+      <a href="{% url 'LOCKER:lockers' 'C' %}">C</a>
+    </td>
+  </tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td><td></td></tr>
+  <tr>
+    <td style="border: 1px solid black;" id="hoverable">
+      <a href="{% url 'LOCKER:lockers' 'D' %}">D</a>
+    </td>
+    <td></td>
+    <td style="border: 1px solid black;" id="hoverable">
+      <a href="{% url 'LOCKER:lockers' 'E' %}">E</a>
+    </td>
+    <td></td>
+    <td style="border: 1px solid black;">
+      B107
+    </td>
+</table>
+{% endblock %}

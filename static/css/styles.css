@@ -1,0 +1,103 @@
+/*--------------------------------------------------*/
+*
+{
+	font-family: monospace;
+	font-size: medium;
+	margin: 0;
+  padding: 0;
+}
+a
+{
+	color: black;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+}
+div
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+table
+{
+	border-collapse: collapse;
+	box-sizing: border-box;
+}
+td
+{
+	text-align: center;
+	vertical-align: middle;
+}
+form table
+{
+	min-width: 25vw;
+	min-height: 15vh;
+}
+form input
+{
+	width: 90%;
+	border: none;
+	text-align: center;
+}
+/*------------------------------------- Banner -----*/
+table.banner
+{
+	border: 1px solid black;
+	min-width: 50vw;
+	min-height: 5vh;
+}
+table#banner_top
+{margin-top: 1vh;}
+table#banner_top td
+{width: 25%;}
+table#banner_top td:hover
+{background-color: #c8c8c8;}
+table#banner_bottom
+{margin-bottom: 1vh;}
+/*--------------------------------------------------*/
+div#content
+{
+	min-width: 50vw;
+	min-height: 88vh;
+}
+/*------------------------------------ Account -----*/
+table#account
+{min-width: 25vw;}
+table#account th
+{width: 25%;}
+table#account td
+{width: 75%;}
+/*------------------------------------- Locker -----*/
+table#_lockers
+{
+	border: 1px solid black;
+	min-width: 35vw;
+	min-height: 15vh;
+}
+table#_lockers td
+{
+	width: 20%;
+	height: 25%;
+}
+table#_lockers td#hoverable:hover
+{background-color: #c8c8c8;}
+
+table#__lockers
+{border: 1px solid black;}
+table#__lockers td
+{
+	width: 4vw;
+	height: 5vh;
+}
+
+table#__lockers td#A {background-color: #91cdaf;}
+table#__lockers td#U {background-color: #f05555;}
+table#__lockers td#B {background-color: #f0cd3c;}
+
+table#__lockers td#A:hover {background-color: #a5e1c3;}
+table#__lockers td#U:hover {background-color: #ff6969;}
+table#__lockers td#B:hover {background-color: #ffe150;}
+/*--------------------------------------------------*/

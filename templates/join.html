@@ -1,0 +1,33 @@
+{% extends 'template.html' %}
+{% block javascript %}
+<script type="text/javascript">
+  function check()
+  {
+    if(document.formJoin.firstName.value == "")
+    {alert("\nEmpty first name\nPlease input first name");}
+    else if(document.formJoin.lastName.value == "")
+    {alert("\nEmpty last name\nPlease input last name");}
+    else if(document.formJoin.username.value == "")
+    {alert("\nEmpty username\nPlease input username");}
+    else if(document.formJoin.password.value == "")
+    {alert("\nEmpty password\nPlease input password");}
+    else if(document.formJoin.password.value != document.formJoin.password_re.value)
+    {alert("\nTwo passwords do not match\nPlease match passwords");}
+    else
+    {document.formJoin.submit();}
+  }
+</script>
+{% endblock %}
+{% block content %}
+<form method="post" name="formJoin">{% csrf_token %}
+  <table>
+    <tr><td>[<input type="text"     name="firstName"    placeholder="Input first name"  >]</td></tr>
+    <tr><td>[<input type="text"     name="lastName"     placeholder="Input last name"   >]</td></tr>
+    <tr><td>[<input type="text"     name="username"     placeholder="Input username"    >]</td></tr>
+    <tr><td>[<input type="password" name="password"     placeholder="Input password"    >]</td></tr>
+    <tr><td>[<input type="password" name="password_re"  placeholder="Re-Input password" >]</td></tr>
+    <tr><td>[<input type="email"    name="email"        placeholder="Input Email"       >]</td></tr>
+    <tr><td><a onclick="javascript:check()">[Join]</a></td></tr>
+  </table>
+</form>
+{% endblock %}

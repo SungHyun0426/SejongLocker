@@ -1,0 +1,11 @@
+{% extends 'template.html' %}
+{% block content %}
+  <table id="account">
+    <tr><th>First name</th><td>{{user.first_name}}</td></tr>
+    <tr><th>Last name</th><td>{{user.last_name}}</td></tr>
+    <tr><th>Username</th><td>{{user.username}}</td></tr>
+    <tr><th>Email</th><td>{{user.email}}</td></tr>
+    <tr><th>Locker</th><td>{{user.lockerId}}</td></tr>
+    <tr><td colspan="2"><a href="{% url 'accountEdit' %}">[Edit]</a></td></tr>
+  </table>
+{% endblock %}

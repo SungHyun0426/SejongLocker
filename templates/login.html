@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+{% block javascript %}
+<script type="text/javascript">
+  function check()
+  {
+    if(document.formLogin.username.value == "")
+    {alert("\nEmpty username\nPlease Input username");}
+    else if(document.formLogin.password.value == "")
+    {alert("\nEmpty password\nPlease Input password");}
+    else
+    {document.formLogin.submit();}
+  }
+</script>
+{% endblock %}
+{% block content %}
+<form method="post" name="formLogin">{% csrf_token %}
+  <table>
+    <tr><td>[<input type="text" name="username" placeholder="Input username">]</td></tr>
+    <tr><td>[<input type="password" name="password" placeholder="Input password">]</td></tr>
+    <tr><td><a onclick="javascript:check()">[Login]</a></td></tr>
+  </table>
+</form>
+{% endblock %}
