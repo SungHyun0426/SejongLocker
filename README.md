@@ -4,7 +4,6 @@
 2. 'python manage.py flush' 명령어를 실행하여 데이터배이스를 청소
 3. 'python manage.py createsuperuser' 명령어를 실행하여 최고권한자 생성
 4. 아래 명령어들을 실행
-
 <br/> python manage.py makemigrations
 <br/> python manage.py migrate
 <br/> python manage.py loaddata locker\fixtures\defaultLockersA.json
