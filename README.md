@@ -1,6 +1,7 @@
 # SejongLocker
 
 ~~1. 'VirtualEnvironment\Scripts\activate'를 실행하여 가상환경 실행~~
+
 2. 'python manage.py flush' 명령어를 실행하여 데이터배이스를 청소
 3. 'python manage.py createsuperuser' 명령어를 실행하여 최고권한자 생성
 4. 아래 명령어들을 실행
